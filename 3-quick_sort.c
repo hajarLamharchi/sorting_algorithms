@@ -50,17 +50,17 @@ int partition(int *arr, int lo, int li, size_t size)
 {
 	int i = 0;
 	int pivot = arr[li];
-	int crrt = (lo);
+	int crrt = lo;
 
 	for (i = lo; i < li; i++)
 	{
 		if (arr[i] < pivot)
 		{
 			crrt++;
-			if (arr[crrt] != arr[li])
+			if (arr[crrt - 1] != arr[i])
 			{
 				swap(arr, crrt - 1, i);
-				print_array(arr, size);
+				print_array(arr, size);			
 			}
 		}
 	}
