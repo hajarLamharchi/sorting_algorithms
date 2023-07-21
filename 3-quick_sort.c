@@ -60,7 +60,7 @@ int partition(int *arr, int lo, int li, size_t size)
 			if (arr[crrt - 1] != arr[i])
 			{
 				swap(arr, crrt - 1, i);
-				print_array(arr, size);			
+				print_array(arr, size);
 			}
 		}
 	}
