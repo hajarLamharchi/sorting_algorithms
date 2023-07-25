@@ -24,10 +24,10 @@ void counting_sort(int *array, size_t size)
 	count = malloc(sizeof(int) * (max + 1));
 	if (count == NULL)
 		return;
-	final = malloc(sizeof(int) * (size + 1));
+	final = malloc(sizeof(int) * size);
 	if (final == NULL)
 		return;
-	for (i = 0; i < ((int)max + 1); i++)
+	for (i = 0; i < (max + 1); i++)
 	{
 		count[i] = 0;
 		for (j = 0; j < (int)size; j++)
